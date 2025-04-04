@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* colors */
+.color-olive {
+  background-color: #b7b12a;
+}
+.color-pink {
+  background-color: #f9bbcb;
+}
+.color-azure {
+  background-color: #92daff;
+}
+.color-like-grey {
+  background-color: #ECEBE0;
+}
+.color-yellow {
+  background-color: #FFF856;
+}
+/* main block with top and bottom sides */
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.top p {
+  margin: 0;
+  padding: 40px;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  /* margin: 151px 35px 10px 38px; */
+  padding: 100px;
+}
+
+.bottom h1 {
+  font-size: clamp(244px, 20vw, 320px);
+  font-weight: 800;
+  letter-spacing: -20px;
+}
+
+/* fonts */
+.syne-400 {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #000000;
+}
+.syne-800 {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: clamp(244px, 20vw, 307px);
+  line-height: 0.9;
+  color: #000000;
+}
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: -0.1%;
+}
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -3%;
+}
+
+/* container with stretch */
+.container {
+  display: flex;
+  align-items: stretch;
+}
+
+
+/* divs with double blocks */
+.left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.left {
+  flex: 0 0 60%;
+}
+.right {
+  flex: 0 0 40%;
+  background-color: #f9bbcb;
+  padding: 75px 60px 263px 48px;
+}
+
+/* font-sizes */
+.f-s-86 {
+  font-size: 86px;
+}
+
+.f-s-370 {
+  font-size: 370px;
+}
+
+.f-s-24 {
+  font-size: 24px;
+}
+
+.p-60 {
+  padding: 60px;
+}
+
+.f-s-28 {
+  font-size: 28px;
+}
+.f-s-189 {
+  font-size: 189px;
+}
+.f-s-1400 {
+  font-size: 1400px;
+}
+/* specials */
+.special-width .text-group {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-50 {
+  flex: 0 0 50%;
+  text-align: center;
+}
+.rect {
+  width: 605px;
+  height: 605px;
+  margin: auto;
+  display: flex;
+}
