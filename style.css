@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 /* colors */
 .color-olive {
@@ -19,6 +20,17 @@
 }
 .color-yellow {
   background-color: #FFF856;
+}
+.white {
+  color: white;
+}
+/* bgs */
+.bgi-girl {
+  background-image: url(img/Frame\ 299.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 /* main block with top and bottom sides */
 .header {
@@ -68,6 +80,13 @@
   line-height: 0.9;
   color: #000000;
 }
+
+.syne-700 {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 .ibm-plex-serif-regular {
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
@@ -90,9 +109,9 @@
 
 
 /* divs with double blocks */
-.left img {
+img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 .left {
@@ -117,19 +136,43 @@
   font-size: 24px;
 }
 
-.p-60 {
-  padding: 60px;
-}
-
 .f-s-28 {
   font-size: 28px;
 }
 .f-s-189 {
   font-size: 189px;
 }
-.f-s-1400 {
-  font-size: 1400px;
+.f-s-1000 {
+  font-size: 1000px;
 }
+
+/* paddings */
+.p-60 {
+  padding: 60px;
+}
+
+/* 50/50 block */
+.flex-50 {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
 /* specials */
 .special-width .text-group {
   width: 70%;
@@ -139,13 +182,22 @@
   justify-content: space-between;
   align-items: center;
 }
-.flex-50 {
-  flex: 0 0 50%;
-  text-align: center;
-}
+
 .rect {
   width: 605px;
   height: 605px;
-  margin: auto;
-  display: flex;
+  margin: 37px auto;
+}
+.radial {
+  background:
+    radial-gradient(ellipse at top center, #92daff 69%, transparent 60%) top / 100% 45% no-repeat,
+    radial-gradient(ellipse at bottom center, #92daff 69%, transparent 60%) bottom / 100% 45% no-repeat 
+    #7D791F;
+}
+
+.square {
+	width: 816.5px;
+	height: 796px;
+  background: linear-gradient(135deg, #B5100A 50%, transparent 50%);
+  
 }
